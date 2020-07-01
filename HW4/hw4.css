@@ -1,0 +1,16 @@
+.green-text{
+    color: green;
+}
+.yellow-contant{
+    background-color: yellow;
+}
+.no-repeat{
+    background-image: url(8193tTp5TsL._AC_SX425_.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.repeat{
+    background-image: url(41Rtg6QAC+L._AC_.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+}
