@@ -1,0 +1,39 @@
+body{
+    font-size: 30px;
+}
+.cb1{
+    color: white;
+    background-color: red;
+}
+.cb2{
+    color: white;
+    background-color:green;
+}
+.cb3{
+    color: white;
+    background-color:blue;
+}
+.cb4{
+    color: white;
+    background-color:purple;
+}
+
+#cb1:checked + .cb1{
+    
+    text-decoration: underline;
+}
+#cb2:checked + .cb2{
+    
+    font-style: italic;
+}
+#cb3:checked + .cb3{
+    
+    background-color:yellow;
+    color: black;
+}
+#cb4:checked + .cb4::after{
+    content: "~";
+}   
+#cb4:checked + .cb4::before{
+    content: "~";
+}   

@@ -1,0 +1,46 @@
+p:first-letter{
+    color: red;
+}
+
+  
+span {
+    background-color: green;
+    font-style: italic;
+    color: white
+  } 
+
+  .gray-text{
+    color: gray;
+  }
+  .red-text{
+    color:red;
+  }
+  .Yellowh-text{
+    color:yellow;
+  }
+  .green-text{
+    color:green;
+  }
+  .Blueh3{
+    color:blue;
+  }
+
+table{
+  text-align: center;
+}
+
+/* tr, td {
+  border-style: double;
+  border-width: 5px;
+ 
+} */
+
+.green-box{
+  background-color: green;
+  
+  color: white
+}
+
+.bolt-text{
+  font-weight: 700;
+}
