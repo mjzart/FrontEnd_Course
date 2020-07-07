@@ -12,3 +12,8 @@
     width: 390px;
     height: 240px;
   }
+  .task{
+          border: 5px dotted black;
+        margin: 20px 10px 40px 20px;
+        padding: 10px;
+      }
