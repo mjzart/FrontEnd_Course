@@ -25,15 +25,17 @@ span {
     color:blue;
   }
 
-table{
+.table{
   text-align: center;
+  border-width: 5px;
+  border-style: double;
 }
 
-/* tr, td {
+/*tr, td {
   border-style: double;
   border-width: 5px;
  
-} */
+}*/
 
 .green-box{
   background-color: green;

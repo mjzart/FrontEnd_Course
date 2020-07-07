@@ -31,9 +31,9 @@ body{
     background-color:yellow;
     color: black;
 }
-#cb4:checked + .cb4::after{
+#cb4:checked + .cb4:after{
     content: "~";
 }   
-#cb4:checked + .cb4::before{
+#cb4:checked + .cb4:before{
     content: "~";
 }   
