@@ -1,0 +1,31 @@
+.button-menu{
+    color: white;
+    background-color: #4527a0;
+    padding: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    float: left;
+    
+
+}
+li{
+    
+    list-style-type: none;
+}
+ul{
+    padding-inline-start:0px;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+    clear: both;
+}
+.background{
+    background-color: #000070;
+}
+
+
+.button-menu:hover{
+    background-color: #7953d2;
+}

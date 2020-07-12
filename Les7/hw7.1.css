@@ -1,0 +1,32 @@
+body{
+    text-align: center;
+}
+.pages{
+    border:1px solid black;
+    border-radius:3px;  
+    color: #1d749d;  
+    display:inline-block; 
+    width:30px;
+    height:30px; 
+    
+}
+.panel{
+    display: inline-block;
+   text-align:center;
+   margin:5px;
+   text-decoration: none;
+   color: #1d749d;
+   
+   box-sizing: border-box;
+  }
+
+.check, .check a{
+    background-color:#48a7e4;
+    color:white;
+}
+
+.button{
+    display:inline-block ;
+    background-color: white;
+    color: #1d749d;
+}
