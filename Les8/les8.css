@@ -1,0 +1,33 @@
+.container {
+    border:5px solid grey;
+    position: relative;  
+    width: 500px;
+    }
+    
+    .target {
+      position: absolute;
+      top:0;
+      right: 0;
+      width: 100px;
+     height: 100px;
+     background-color: aquamarine;
+     border-radius: 5px;
+     
+    }
+.container2 {
+    position: relative;
+}
+        
+.sidebar {
+    position: fixed;
+    width:80px;
+    height:400px;
+    background-color: aquamarine;
+    padding: 5px;
+    border-radius: 5px;
+}
+.content{
+    position:absolute;
+    left:100px;
+}
+           
