@@ -19,22 +19,25 @@
     left: 40px;
 
 }
-.cheese1{
+.cheese{
     background-color: white;
     border: 10px solid black;
-    position: absolute;
     width: 50px;
     height: 50px;
+    
+}
+.cheese1{
+   
+    position: absolute;
+   
     left: 150px;
     top: -10px;
 }
 
 .cheese2{
-    background-color: white;
-    border: 10px solid black;
+    
     position: absolute;
-    width: 50px;
-    height: 50px;
+    
     left: 250px;
     top: -10px;
 }
@@ -87,22 +90,21 @@
     width: 0px;
     height: 0x;
 }
-
-.ears1{
+.all-ears{
     border:10px solid #c16a23;
     width: 50px;
     height: 150px;
     background-color: #fcda25;
+    }
+.ears1{
+    
     position: absolute;
     top: 80px;
     left: 160px;
 }
 
 .ears2{
-    border:10px solid #c16a23;
-    width: 50px;
-    height: 150px;
-    background-color: #fcda25;
+    
     position: absolute;
     top: 80px;
     left:375px;
