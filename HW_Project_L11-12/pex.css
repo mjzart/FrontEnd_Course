@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+}
+
+.page-content{
+    background-image: url(pex-header-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    
+
+}
+.header-contain{
+    justify-content: space-between;
+    border-bottom: 1px solid #000 ;
+    
+}
+.inline{
+   display: inline-block;
+}
+.flex{
+    display: flex;
+    
+
+}
+.logo-text {
+    justify-content: start;
+    margin-left: 260px ;
+    color: #e7526b;
+}
+.logo-description{
+    justify-content: start;
+    align-self: center;
+    font-size: 13px;
+}
+.main-menu{
+    justify-content: center;
+    align-items: center;
+}
+.menu-item{
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+    font-size: 13px;
+}
+.main-content{
+    margin-right: 250px;
+    margin-top: 250px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.down-content{
+    background-color: #2e3b4e;
+}
+.caption{
+    margin: 0;
+}
+.text{
+    margin: 0;
+}
+.main-caption{
+    font-size: 50px;
+    color: #fff;
+    text-align: right;
+    width: 500px;
+}
+.button{
+    width: 280px;
+    height: 60px;
+    font-size: 18px;
+    border-radius: 30px;
+    background-color: #8824cd;
+    align-self: end;
+}
+.text{
+    column-count: 2;
+}
+.search{
+    border-radius: 30px;
+    margin-right: 260px;
+}

@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+.page-container{
+    padding: 0;
+    background-image: url(404-bg-image.jpg);
+    
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+.warning-text{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+}    
+
+.text-404{
+    font-size: 209px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.image-404{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 152px;
+    height: 152px;
+}
+.link-back{
+    color: #ffe600;
+    text-decoration: none;
+    font-style: italic;
+    text-align: center;
+}
