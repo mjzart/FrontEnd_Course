@@ -24,6 +24,7 @@ body{
     color: #ffffff;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .image-404{
     margin-left: 20px;
@@ -36,4 +37,25 @@ body{
     text-decoration: none;
     font-style: italic;
     text-align: center;
+}
+.search{
+    width: 570px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+}
+.search::placeholder{
+    color: #fff;
+}
+.button{
+    background-color: #2a233d;
+    width: 170px;
+    height: 72px;
+    color: #fff;
+}
+.link-back{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 42px;
 }
