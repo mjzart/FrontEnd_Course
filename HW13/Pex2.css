@@ -1,0 +1,298 @@
+body{
+    margin: 0;
+    color: #ffffff;
+}
+
+.logo-text {
+    justify-content: start;
+    color: #e7526b;
+    font-style: italic;
+    margin-left: 5vw;
+}
+
+.logo-description{
+    justify-content: start;
+    align-self: center;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.top-container {
+    background-image: url(https://raw.githubusercontent.com/Kolland/fe-basics-resources/master/L11-12-HW/pex-header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   }
+   
+   
+   
+   header {
+    display: flex;
+    border-bottom: 1px solid white;
+    align-items: center;
+   }
+   
+   .logo {
+    color: white;
+    display: flex;
+   }
+   
+   .header-right-box {
+    margin-left: auto;
+   }
+   
+   .header-right-box {
+    display: flex;
+    align-items: center;
+   }
+   
+   nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    padding-top: 41px;
+    padding-bottom: 41px;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition-property: background-color;
+    transition-delay: 300ms;
+    transition-duration: 3000ms;
+   }
+   
+   nav a:hover {
+    border-bottom-color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+   }
+   
+   .search-box {
+    background-color: white;
+    height: 44px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 13px;
+   }
+   
+   .search-box img {
+    width: 14px;
+   }
+   
+   .search-box input {
+    border: none;
+   }
+   
+   .headline-text-container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: auto;
+  
+   }
+   
+   .headline-text {
+    font-size: 50px;
+    line-height: 1.4;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 0;
+    text-align: right;
+   }
+   
+   .button {
+     border-radius: 30px;
+     box-shadow: 0px 1px 0 0 rgba(0, 0, 0, 0.2), inset 0px 1px 0 0 rgba(255, 255, 255, 0.4);
+   
+     
+    border: none;
+    padding: 20px 60px;
+    color: white;
+    font-size: 18px;
+    margin-left: auto;
+
+    transition-property: color;
+    transition-delay: 100ms;
+    transition-duration: 3000ms;
+   }
+   .main-button{
+    background-color: #8824cd;
+    color: white;
+   }
+   
+   span {
+    color: white;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: 26px;
+    margin-top: 18px;
+   }
+
+   .down-content{
+    background-color: #2e3b4e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.text-box{
+    margin: 33px;
+    width: 400px;
+}
+
+.red-content{
+    background-image: url(trees-with-overlay.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+
+.panel-blue{
+    position: relative;
+    height: 12px;
+    background-color:#2e3b4e ;
+}
+
+.shape{
+    position: absolute;
+    transform: translate(300%, -50%);
+}
+
+.purple-content{
+    background-image: url(bg-2-with-overlay.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+
+.food-content{
+    background-image: url(food.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    
+}
+
+.avatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px;
+    
+}
+
+.foot-caption{
+    width: 514px;
+    height: 91px;
+    font-size: 40px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.25;
+    text-align: left;
+    margin-left: 5vw;
+}
+
+.profile{
+    display: flex;
+    margin-left: 5vw;
+}
+
+.profile-name{
+    align-self: center;
+}
+
+.red-caption{
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1.71;
+    text-align: center;
+}
+
+.red-text{
+    
+    font-size: 15px;
+    line-height: 1.73;
+    text-align: center;
+}
+.red{
+    background-color: #fff;
+    color: #d54c63;
+    width: 341px;
+    height: 62px;
+}
+
+
+.caption-purple{
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.purple-text{
+    color: #a87bb7;
+    font-size: 20px;
+    line-height: 1.65;
+    text-align: center;
+}
+
+
+.purple-little-text{
+    font-size: 12px;
+    line-height: 1.42;
+}
+.purple-button{
+    color: #fff;
+    background-color: #8824cd;
+    width: 280px;
+    height: 60px;
+}
+
+.red:hover {
+    color:#fff;
+    background-color: #d54c63;
+}
+.purple-button:hover{
+    color:#8824cd;
+    background-color: #fff;
+}
+
+.main-button:hover{
+    color:#8824cd;
+    background-color: #fff;
+}
+
+.foot-button:hover{
+    color: rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+}
+
+.foot-button{
+    border: 2px solid #fff;
+    width: 135px;
+    height: 35px;
+    border-radius: 17.5px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    margin-left: 5vw;
+}
