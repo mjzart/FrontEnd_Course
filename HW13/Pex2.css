@@ -154,7 +154,8 @@ body{
     flex-direction: column;
     height: 100vh;
     text-align: center;
-}
+    position: relative;
+}   
 
 .panel-blue{
     position: relative;
@@ -164,7 +165,8 @@ body{
 
 .shape{
     position: absolute;
-    transform: translate(300%, -50%);
+    top:-63px;
+    left: calc(100%-50%-200px);
 }
 
 .purple-content{
