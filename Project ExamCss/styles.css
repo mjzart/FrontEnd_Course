@@ -1,0 +1,251 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.header{
+    width: 100vw;
+    height: 105px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header-content{
+    width: 1125px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.Shape-1{
+    width: 43px;
+    height: 41px;
+    margin: 15px;
+    object-fit: contain;
+    
+}
+
+.logo-text{
+    width: 91px;
+    height: 19px;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 0.67;
+    color: #333333;
+}
+
+.io{
+    color: #8d81ac;
+}
+
+.right-side{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.menu-item{
+    display: inline-block;
+    margin-right: 35px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: bold;
+    line-height: 0.94;
+    color: #635c73;
+}
+
+.button-buy{
+   
+    width: 145px;
+    height: 38px;
+    border-radius: 19px;
+    border: none;
+    background-color: #8d81ac;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.first-screan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/screan1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.name{
+    font-family: Montserrat;
+    font-size: 82px;
+    font-weight: bold; 
+    line-height: 0.25;
+    margin: 10vh;
+}
+
+.description{
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: normal;
+    color: #8d81ac;
+    line-height: 0.68;
+}
+
+.version{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.28;
+    color: #848e97;
+}
+
+.download{
+    position: absolute;
+    top: 96vh;
+    width: 390px;
+    height: 62px;
+    border-radius: 30px;
+    border: none;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 0.98;
+    color: #fff;
+    background-color: #8d81ac;
+
+}
+
+.screan-editor{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.screan-editor-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trial-period{
+    margin-top: 50px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.07;
+    text-align: center;
+    color: #848e97;
+}
+
+.screan-editor-name{
+    font-family: Montserrat;
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 0.38;
+    text-align: center;
+    color: #635c73;
+}
+
+.screan-editor-text{
+    max-width: 878px;
+    opacity: 0.8;
+    font-family: "Source Sans Pro";
+    font-size: 21px;
+    font-weight: normal;
+    line-height: 1.52;
+    text-align: center;
+    color: rgba(50, 50, 50, 0.8);
+}
+
+.screan-get-content{
+    display: flex;
+    width: 1125px;
+    margin-top: 80px;
+}
+
+.screan-get{
+    
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.screan-get-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.point{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+
+.point-caption{
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.31;
+    text-align: left;
+    color: #323232;
+}
+
+.point-text{
+    width: 350px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #848e97;
+}
+
+.icon{
+    width: 111px;
+    height: 64px;
+    object-fit: contain;
+    margin-right: 44px;
+}
+
+
+.screan-get-left{
+    
+    position: relative;
+}
+.editor{
+    position: absolute;
+    top: 10vh;
+    left: 3vw;
+    width: 1200px;
+    height: 650px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.screan-get-name{
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8d81ac;
+}
