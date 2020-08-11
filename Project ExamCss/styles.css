@@ -1,6 +1,11 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    overflow-x:hidden;
     margin: 0;
+}
+
+main{
+    width: 100vw;
 }
 
 .header{
@@ -12,7 +17,8 @@ body{
 }
 
 .header-content{
-    width: 1125px;
+    max-width: 1120px;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
 }
@@ -228,6 +234,7 @@ body{
     position: relative;
 }
 .editor{
+    margin-top: 5vh;
     position: absolute;
     top: 10vh;
     left: 3vw;
@@ -235,6 +242,12 @@ body{
     height: 650px;
     object-fit: contain;
     overflow: hidden;
+}
+
+.img-conteiner {
+    width: 705px;
+    height: 580px;
+    object-fit: contain;
 }
 
 .screan-get-name{
@@ -248,4 +261,36 @@ body{
     letter-spacing: normal;
     text-align: left;
     color: #8d81ac;
+}
+
+.last-screan-content{
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.last-screan-caption{
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.14;
+    text-align: left;
+    color: #d3d1da;
+    margin-bottom: 60px;
+}
+
+.ls-text-black{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.63; 
+    text-align: left;
+    color: #323232;
+}
+
+.ls-text{
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: left;
+    color: #848e97;
 }
