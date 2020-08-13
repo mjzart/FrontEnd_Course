@@ -12,8 +12,6 @@ body{
 }
 
 .header-content{
-    max-width: 1120px;
-    width: 100%;
     display: flex;
     justify-content: flex-start;
 }
@@ -638,7 +636,7 @@ body{
 }
 
 .line{
-    max-width: 60px;
+    width: 60px;
     height: 5px;
     background-color: #8d81ac;
 }
@@ -659,7 +657,7 @@ body{
 }
 
 .buy{
-    max-width: 160px;
+    width: 160px;
     height: 42px;
     background-color: rgba(255, 255, 255, 0.15);
     font-family: Montserrat;
