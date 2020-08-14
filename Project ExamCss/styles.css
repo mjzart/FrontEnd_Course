@@ -565,6 +565,7 @@ body{
     background-image: url(img/layer-2.png);
     background-size: cover;
     background-position:center;
+    background-color: #514153;
 }
 
 .head-block{
