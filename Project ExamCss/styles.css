@@ -4,6 +4,13 @@ body{
     margin: 0;
 }
 
+.menu-icon{
+    width: 26px;
+    height: 21px;
+    margin-left: 50px;
+    display: none;
+}
+
 .header{ 
     height: 105px;
     display: flex;
@@ -574,6 +581,8 @@ body{
     background-color: #514153;
 }
 
+
+
 .head-block{
     width: 100%;
     background-color:rgba(255, 255, 255, 0.11);
@@ -581,6 +590,7 @@ body{
 
 .price-block{
     display: flex;
+    max-width: 257px;
     flex-direction: column;
     align-items: center;
     background-color:rgba(255, 255, 255, 0.06);
@@ -712,10 +722,21 @@ body{
         overflow-x: hidden;
     }
     .name{
-     
-        font-size: 55px;
+        margin-top: 88px;
+        font-size: 82px;
         font-weight: bold;
-        margin: 25px;
+        
+    }
+    .description{
+        font-size: 24px;
+        line-height: 1.42;
+    }
+    .price-block{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .menu-icon{
+        display: block;
     }
     
     
