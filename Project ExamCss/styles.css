@@ -99,7 +99,7 @@ body{
     font-size: 82px;
     font-weight: bold; 
     line-height: 1;
-    margin: 50px;
+    margin: 30px;
 }
 
 .description{
@@ -178,17 +178,20 @@ body{
 }
 
 .screan-get-content{
+   
     display: flex;
     margin-top: 80px;
 }
 
 .screan-get{    
+    position: relative;
     display: flex;
     justify-content: center;
     background-color: #f4f4f4;
 }
 
 .screan-get-right{
+    min-width: 500px;
     display: flex;
     flex-direction: column;
 }
@@ -247,6 +250,9 @@ body{
 }
 
 .screan-get-name{
+    position: absolute;
+    top:85px;
+    left: 640px;
     margin: 0;
     font-family: Montserrat;
     font-size: 48px;
@@ -260,8 +266,12 @@ body{
 }
 
 .img-container{
+    position: absolute;
+    top:180px;
+    left: 650px;
     max-width: 705px;
-    owerflow: hidden;
+    height: 580px;
+    background-image: url(img/editor.png);
 }
 
 .slider{
@@ -337,6 +347,7 @@ body{
 }
 
 .git-button{
+    position: relative;
     width: 240px;
     height: 50px;
     border-radius: 4px;
@@ -345,6 +356,7 @@ body{
 }
 
 .twitter-button{
+    position: relative;
     width: 240px;
     height: 50px;
     border-radius: 4px;
@@ -353,6 +365,7 @@ body{
 }
 
 .facebook-button{
+    position: relative;
     border: none;
     width: 240px;
     height: 50px;
@@ -492,7 +505,7 @@ body{
 }
 
 .ses-mail{
-    max-width: 335px;
+    min-width: 290px;
     height: 42px;
     border-radius: 21px;
     border: none;
@@ -711,18 +724,27 @@ body{
     background-color: rgba(0, 0, 0, 0.11);
 }
 
+.button-icon{
+    position: absolute;
+    
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    
+}
+
 @media ( max-width: 720px ){
     .navigation{
         display: none;
     }
-    .screan-get-left{
+    /* .screan-get-left{
         display: none;
-    }
+    } */
     .container{
         overflow-x: hidden;
     }
     .name{
-        margin-top: 88px;
+        margin-top: 70px;
         font-size: 82px;
         font-weight: bold;
         
