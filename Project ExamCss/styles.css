@@ -206,10 +206,11 @@ body{
     margin: 0;
     font-family: Montserrat;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: bold;
     line-height: 1.31;
     text-align: left;
     color: #323232;
+    margin-bottom: 18px;
 }
 
 .point-text{
@@ -224,10 +225,28 @@ body{
 }
 
 .icon{
-    max-width: 111px;
-    height: 64px;
     object-fit: contain;
+    
+}
+.point__icon--1{
+    width: 111px;
+    height: 64px;
+    margin-right: 24px;
+}
+.point__icon--2{
+    width: 90px;
+    height: 80px;
     margin-right: 44px;
+}
+.point__icon--3{
+    width: 60px;
+    height: 84px;
+    margin-right: 59px;
+}
+.point__icon--4{
+    width: 71px;
+    height: 71px;
+    margin-right: 53px;
 }
 
 
@@ -456,6 +475,7 @@ body{
     line-height: 1.5;
     text-align: center;
     color: #fff;
+    max-width: 325px;
 }
 
 
@@ -635,11 +655,12 @@ body{
 }
 
 .select-block{
-    padding: 0px; 
+    /* padding: 0px;  */
+    transform: scale(1.1);
 }
 
 .select-block-m{
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 
@@ -683,7 +704,7 @@ body{
 }
 
 .select-block-2{
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
 }
 
 .buy{
@@ -704,7 +725,7 @@ body{
 }
 
 .select-block-b{
-    margin-bottom: 105px;
+    /* margin-bottom: 105px; */
 }
 
 .sub-price-text{    
@@ -760,6 +781,10 @@ body{
     .menu-icon{
         display: block;
     }
-    
+    .screan-get-name{
+        display: none;
+    }
+    .point-text{
+        max-width: 290px;
     
 }
