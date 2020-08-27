@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user ={
+            name:'Serhii',
+            lastName:'Dorosh',
+            age: 24,
+            parents:[
+                {
+                    name:'Yurii',
+                    lastName:'Dorosh', 
+                    age:52,
+                },
+                {
+                    name:'Valentina',
+                    lastName:'Dorosh', 
+                    age:45,
+                },
+
+            ],
+        };
+        const sumOfAge = user.age + user.parents[0].age + user.parents[1].age;
+        alert (sumOfAge); 
+        
+    </script>
+</body>
+</html>

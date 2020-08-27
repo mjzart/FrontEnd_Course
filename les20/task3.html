@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits = {
+            banana: 3,
+            mango: 4,
+            apple: 0
+        };
+
+        let want = prompt('Що бажаєте?');
+        let message = 'Такого фрукту немає!';
+
+        for (const key in fruits) {
+            if (key == want){
+                if (fruits[key]>0){
+                    message = `У нас є ${fruits[key]} ${key} `
+                    };
+                 
+            };
+        };
+        alert(message);
+    </script>
+</body>
+</html>

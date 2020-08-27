@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fruits = ["banana", "orange", "apple", "mango"];
+        let want = prompt('Що бажаєте?');
+        let get;
+        for (let index = 0; index < fruits.length; index++) {
+            if (want === fruits[index]){
+                get = 'Є такий фрукт';
+                break;
+            }
+            else{
+                get = 'Не має такого фрукта';
+            };
+            
+        }
+        alert(get)
+    </script>
+</body>
+</html>
