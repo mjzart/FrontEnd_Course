@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let massege = 'Canceled';
+        let userName = prompt('Логін:');
+        if (userName === 'admin'){
+            let userPassword = prompt('Пароль:');
+            if (userPassword === 'passw0rd') {
+                massege = 'Welcome home!';
+            }
+            else if(userPassword === null){
+                massege = 'Canceled';
+            }
+            else {
+                massege = 'Wrong password';
+            }
+        }
+        else if(userName === null){
+            massege = 'Canceled';
+        }
+        else{
+           massege = 'Access denied';
+        };
+
+
+        alert(massege);
+    </script>
+</body>
+</html>
