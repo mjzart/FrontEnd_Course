@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function bildTree(element, i) {
+           let tree ='';
+           
+          for (let index = 0; index < i; index++) {
+              tree = tree + element; 
+              console.log(tree);
+          }
+        }
+        bildTree('#', 10);
+        bildTree('*', 15);
+    </script>
+</body>
+</html>
