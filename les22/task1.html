@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user = {
+            name:'Serhii',
+            age: 20,
+            parent:{
+                name:'Yurii',
+                age: 30,
+                parent:{
+                    name:'Yurii',
+                    age: 40,
+                    parent: null,
+                },
+            },
+        }
+
+        const calculateAge =(user, initialValue) =>{
+            const calculatedAge = initialValue+ user.age;
+
+            if (user.parent === null){
+                return calculatedAge;
+            }
+
+            return calculateAge(user.parent, calculatedAge);
+            
+            
+        }
+
+        console.log(calculateAge(user,0));
+
+
+    </script>
+</body>
+</html>
