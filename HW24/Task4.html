@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj = {
+            className: 'open menu'
+            };
+
+
+        const removeClass = (obj, text) =>{
+           
+            let words = obj.className.split(' ');
+            
+            words.forEach(element => {
+                if (element === text){
+                    element = '';
+                }
+            });
+            console.log(words);
+            obj.className = words.join('-');
+            console.log(words.join('-'));
+            return obj;
+        }
+        console.log(obj);
+        removeClass(obj, 'open'); // obj.className='menu'
+        console.log(obj);
+        removeClass(obj, 'blabla'); // без змін
+        console.log(obj);
+    </script>
+</body>
+</html>

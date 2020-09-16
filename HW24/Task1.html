@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const tasksCompleted = {
+            'Serg': 29,
+            'Maryna': 35,
+            'Elena': 1,
+            'Anton': 99
+            };
+        console.log(Object.values(tasksCompleted));
+        let max = Math.max(...Object.values(tasksCompleted));
+
+        for (const key in tasksCompleted) {
+           if (tasksCompleted[key] === max){
+               console.log(key);
+           }
+        }
+
+
+        
+
+        
+    </script>
+</body>
+</html>
