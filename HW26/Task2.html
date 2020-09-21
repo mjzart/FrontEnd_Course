@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+</head>
+<body>
+    <script>
+        const obj = {};
+
+        const addPropf = obj =>{
+            return function (key, value) {
+                if (key){
+                    obj[key] = value;
+                    return obj;
+                } else {
+                    return obj;
+                }
+                
+            }
+        }
+
+        const addProp = addPropf(obj);
+        addProp('name', 'Nick');
+        addProp();
+        addProp('age', 25);
+
+        console.log(obj);
+    </script>
+</body>
+</html>
