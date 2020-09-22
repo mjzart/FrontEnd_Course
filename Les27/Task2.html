@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const myAray = {
+            array:null,
+            set: function(arr){
+               return this.array = arr;
+            },
+            length:function(){
+                let i =0;
+                this.array.forEach(element => {
+                     i=i+1;
+                });;
+                return i;
+            },
+        }
+
+        myAray.set([1,2,3,4,5]);
+        console.log(myAray.length());
+
+
+
+    </script>
+</body>
+</html>
