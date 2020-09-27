@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Walkanimal ={
+            walk:function(){
+                console.log(` ${this.name} Go!`);
+            },
+            stay: function(){
+                console.log(` ${this.name} stay!`);
+            },
+        }
+
+        const Swimanimal ={
+            swim : function(){
+                console.log(` ${this.name} Swim!`);
+            },
+            stay: function(){
+                console.log(` ${this.name} stay!`);
+            },
+        }
+
+        const Dog = {
+            name:'Rex'
+        }
+        const Cat = {
+            name:'Kitty'
+        }
+        const Delphine = {
+            name:'Delphine',
+            
+        }
+        Dog.__proto__ = Walkanimal;
+        Cat.__proto__ = Walkanimal;
+        Delphine.__proto__ = Swimanimal;
+
+        Dog.walk();
+        Dog.stay();
+        Cat.walk();
+        Cat.stay();
+        Delphine.stay();
+        Delphine.swim();
+        console.log(Swimanimal.__proto__.isPrototypeOf(Delphine));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Calculator() {
+            this.read = function () {
+                this.a = Number(prompt('a='));
+                this.b = Number(prompt('b='));  
+            };
+            this.sum = function (params) {
+                alert(this.a + this.b);
+            };
+            this.mul = function (params) {
+                alert(this.a * this.b);
+            };
+
+
+        }
+
+        const myCalc = new Calculator()
+
+myCalc.read() // зявиться 2 промпта
+myCalc.sum() // поверне суму
+myCalc.mul() // поверне добуток
+    </script>
+</body>
+</html>
