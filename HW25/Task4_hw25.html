@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = ['осел', 'банка', 'лісок', 'село', 'кабан', 'сокіл'];
+        var newArr = [];
+        for (let i = 0; i<arr.length; i++){
+            newArr.push(arr[i].split('').sort().join(''));
+
+        }
+        console.log(newArr);
+
+        const slovnyk ={};
+        for (let i = 0; i<arr.length; i++){
+            slovnyk[arr[i]]=newArr[i]
+        }
+        console.log(slovnyk);
+        let fin =[];
+        var result = new Set(newArr);
+        for (let i = 0; i<result.length; i++){
+            for (const key in slovnyk) {
+                if (result[i] === slovnyk[key]){
+                    fir.push(key);
+                }
+            }
+        }
+
+        console.log(fin);
+
+        
+
+    </script>
+</body>
+</html>

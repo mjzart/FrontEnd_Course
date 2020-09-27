@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function FuncLadder() {
+            this.step= 0;
+            this.up = function() { // вверх по драбині
+                return this.step++;
+            };
+            this.down= function() { // вниз по драбині
+                return this.step--;
+            };
+            this.showStep = function() { // вивести поточне значення
+                return alert( this.step );
+            };
+        };
+
+        const ladder =new FuncLadder();
+        
+        ladder.up().up().down().up().down().showStep();
+    </script>
+</body>
+</html>

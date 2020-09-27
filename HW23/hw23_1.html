@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const checkSpam = (text) =>{
+            return text.toLowerCase().includes('spam') || text.toLowerCase().includes('sex');
+        }
+
+        console.log(checkSpam('[SPAM] How to earn fast money?')); 
+        console.log(checkSpam('get new Sex videos')); 
+        console.log(checkSpam('New PSD template')); 
+        console.log(checkSpam('New Sex template')); 
+        console.log(checkSpam('New SEx template')); 
+        console.log(checkSpam('New SPAM template')); 
+       
+    </script>
+</body>
+</html>

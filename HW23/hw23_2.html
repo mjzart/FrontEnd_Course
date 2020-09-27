@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const makeShortStringIfNeeded = (text) =>{
+            
+           
+            if(text.length > 20){  
+                return text.slice(0,18) + '...';
+            } else {
+                return text;
+            }
+
+        }
+        
+        console.log(makeShortStringIfNeeded("qwertyuiopasdfghjklzxcvbnm"));
+        console.log(makeShortStringIfNeeded('12345678901234567890'));
+        console.log(makeShortStringIfNeeded('1234567890'));
+
+    </script>
+</body>
+</html>

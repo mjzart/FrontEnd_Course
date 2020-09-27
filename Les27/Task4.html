@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Products(prods) {
+            this.length = function () {
+                let count=0;
+                for (const key in prods) {
+                    if (key){
+                        count+=1;
+                    }          
+                }
+                return count;
+                
+            };;
+            this.sum = function () {
+                let summ=0;
+                for (const key in prods) {
+                    summ = summ + (prods[key].amount*prods[key].price);                   
+                }
+                return summ;
+                
+            };
+            this.count = function () {
+                let count=0;
+                for (const key in prods) {
+                      if (prods[key].amount>0){
+                        count+=1; 
+                      }            
+                }
+                return count;
+            }
+        }
+
+        const obj = {
+            'apples':{
+                amount:40,
+                price:10,
+            },
+            'banana':{
+                amount:30,
+                price:15,
+            },
+            'mango':{
+                amount:20,
+                price:20,
+            },
+        }
+
+        const myProducts = new Products(obj);
+
+console.log(myProducts.sum()); // 1250 // загальна віртість всіх продуктів
+console.log(myProducts.count());
+console.log(myProducts.length());
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const users = {
+            moderator:{
+                name:'mod1',
+                pasword:'moder1',
+            },
+            admin:{
+                name:'admin1',
+                pasword:'administ1',
+            },
+            user:{
+                name:'user1',
+                pasword:'userPasword1',
+            },
+        }
+
+
+        const addManager = obj =>{
+            let nameObj = prompt('qwer');
+            const innerObj = {
+                [nameObj] : {
+                    name:prompt('name'),
+                pasword:prompt('pasword'),
+                }
+            }
+            const tempObj = Object.assign(innerObj,obj);
+            return tempObj;
+        }
+
+        const users2 = addManager(users);
+        console.log('original Obj',users);
+        console.log('modificate Obj',users2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const image = {
+            width: 100,
+            height: 400,
+            title: 'Cool image'
+            };
+
+    const multiplyNumeric = obj =>{
+        const tempObj = Object.assign({},obj);
+        for (const key in tempObj) {
+            if (typeof(tempObj[key]) === 'number'){
+                tempObj[key] = tempObj[key]*2;
+            }
+        }
+        return tempObj;
+    };
+    console.log('origrnal obj:', image);
+    console.log('multiplyNumeric obj:', multiplyNumeric(image));
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add() {
+            return function (x) {
+                
+            
+        
+            return function(y) {
+                if (typeof y !== 'undefined') {
+                    x = x + y;
+                    return arguments.callee;
+                } else {
+                    return x;
+                }
+            };
+        }
+    }
+
+        const addf = add();
+
+console.log(addf(1)(2)()); // 3
+console.log(addf(1)(2)(3)(4)(5)()); // 15
+console.log(addf(1)(2)()); // 3
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myMap(arr, func) {
+            let nawArr = [];
+            for (let i = 0; i<arr.length; i++){
+                nawArr.push(func(arr[i]));
+            }
+            return nawArr;
+        }
+
+        function double(item) {
+        return item * 2
+        }
+
+        function tripple(item) {
+        return item * 3
+        }
+
+        const doubleArr = myMap([1, 2, 3, 4, 5], double);
+        const trippleArr = myMap([1, 2, 3, 4, 5], tripple);
+
+        console.log(doubleArr); // [2, 4, 6, 8, 10]
+        console.log(trippleArr); // [3, 6, 9, 12, 15]
+    </script>
+</body>
+</html>

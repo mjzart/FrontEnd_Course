@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+</head>
+<body>
+    <script>
+        const add_suffix = syf =>{
+            return function (text) {
+                return text + syf;
+            }
+        }
+
+        const addLy = add_suffix("ly");
+        console.log(addLy("hopeless"));
+
+        const addLess = add_suffix("less");
+        console.log(addLess("fear"));
+    </script>
+</body>
+</html>

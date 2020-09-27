@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const users = {
+            admin: 'passw0rd',
+            moderator: 'm0derator',
+            user1: 'user1pass',
+            user2: 'user2pass',
+        }
+
+        let massege = 'Canceled';
+        let userName = prompt('Логін:');
+
+        for (const key in users) {
+            if (userName === key){
+                let userPassword = prompt('Пароль:');
+                if (userPassword == users[key]){
+                    massege = 'Welcome home!'; 
+                    break;
+                }
+                else if (userPassword === null ){
+                    massege = 'Canceled';
+                    break;
+                }
+                else{
+                    massege = 'Wrong password';
+                    break;
+                }
+            }
+            else if (userName === null){
+                massege = 'Canceled';
+                break;
+            }
+            else{
+                massege = 'Access denied';
+            }
+        }
+
+        alert(massege);
+
+
+        
+    </script>
+</body>
+</html>
