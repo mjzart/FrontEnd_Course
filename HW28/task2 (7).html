@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const User  = {
+            login: function name(params) {
+                console.log(`Logged in as  ${this}`);
+            },
+            logout: function name(params) {
+                console.log(`Logout successful`);
+            },
+        }
+
+        const SuperAdmin = {
+            position: 'SuperAdmin',
+        }
+        SuperAdmin.__proto__ = User;
+
+        const Admin  = {
+            position: 'Admin ',
+        }
+        Admin.__proto__ = User;
+        
+        const Customer = {
+            position: 'Customer',
+        }
+        Customer.__proto__ = User;
+
+        const myCustomer = {
+        name: "Nick"
+        }
+        myCustomer.__proto__ = Customer;
+        
+        const myAdmin = {
+        name: "Andrew"
+        }
+        myAdmin.__proto__ = Admin;
+        
+        const mySuperAdmin = {
+        name: "John"
+        }
+        mySuperAdmin.__proto__ = SuperAdmin;
+
+        console.log(User.__proto__.isPrototypeOf(SuperAdmin));  // true
+        console.log(SuperAdmin.__proto__.isPrototypeOf(mySuperAdmin));  // true
+        console.log(Customer.__proto__.isPrototypeOf(myCustomer));  // true
+        console.log(Admin.__proto__.isPrototypeOf(myAdmin));  // true
+
+        mySuperAdmin.login() // in console - "Logged in as SuperAdmin"
+        myAdmin.login() // in console - "Logged in as Admin"
+        myCustomer.login() // in console - "Logged in as Customer"
+
+        myCustomer.logout() // in console - "Logout successful"
+        myAdmin.logout() // in console - "Logout successful"
+        mySuperAdmin.logout() // in console - "Logout successful"
+    </script>
+</body>
+</html>
