@@ -1,0 +1,56 @@
+.slider-panel{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-shrink: 0;
+}
+.Arrow-L {
+    width: 40px;
+    height: 100%;
+    opacity: 0.5;
+    color: #474747;
+    border: none;
+    text-align: center;
+  }
+.Arrow-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.slider{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.slide1{
+    flex-shrink: 0;
+}
+.slider-layer{
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    transition: margin-left 200ms ease-out;
+}
+.profile-info{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.usirpic{
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    border-radius: 100%;
+    margin-right: 25px;
+}
+.profile-text{   
+    text-align: center;
+}
