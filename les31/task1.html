@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+</head>
+<body data-color="red yellow green" data-timeout = "2000" data-type = "loop" >
+    
+    <script>
+    
+        const body = document.getElementsByTagName('body')[0];
+        const colors = body.dataset.color.split(' ');
+        const time = body.dataset.timeout;
+        const type = body.dataset.type;
+
+        let index = 0;
+    
+    
+    if (type === 'loop'){
+        const id = setInterval(() => {
+            body.style.backgroundColor = colors[index];
+            index++;
+    
+            if (index >= colors.length){
+                index = 0;
+            }
+        }, time);
+    } else {
+        const id = setInterval(() => {
+            body.style.backgroundColor = colors[index];
+            index++;
+    
+            if (index >=colors.length){
+                clearInterval(id)
+            }
+        }, time);
+    
+    }
+    
+        
+    
+      
+        
+    </script>
+
+</body >
+
+</html>

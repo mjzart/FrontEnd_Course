@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Vehicle {
+            constructor(color){
+                this.color = color
+            }
+            moveForvard(){
+                console.log('Go forvard');
+            }
+            stop(){
+                console.log('Stop!');
+            }
+        }
+        class Bice extends Vehicle{
+            constructor(color){
+                super(color);
+                this.amountOfWheels = 2;
+            }
+        }
+        class Boat extends Vehicle{
+            constructor(color){
+                super(color);
+                this.amountOfWheels = 0;
+            }
+        }
+        
+        class Car extends Vehicle{
+            constructor(color){
+                super(color);
+                this.amountOfWheels = 4;
+            }
+        }
+
+        const myBice = new Bice('blue');
+        const myCar = new Car('green');
+        const myBoat = new Boat('red');
+
+
+        myBice.moveForvard();
+        myCar.moveForvard();
+        myBoat.moveForvard();
+
+        console.log(myBice);
+        console.log(myCar);
+        console.log(myBoat);
+
+
+    </script>
+</body>
+</html>

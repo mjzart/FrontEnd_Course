@@ -11,7 +11,7 @@
             let hit = false;
             let spiderX = Math.floor(Math.random()*n);  
             let spiderY = Math.floor(Math.random()*m);
-            
+            console.log(`${spiderX} ${spiderY}`);
             let layer = '';
             let elem = '#';
             for (let i=0; i<n; i++){
@@ -25,7 +25,7 @@
                 }
                 layer = layer +'\n';  
             }
-            console.log(layer);
+            
             function shoot() {
                 amoyntOfHit = amoyntOfHit + 1;
                 
@@ -38,8 +38,7 @@
                             if (i === spiderX && j === spiderY){
                                 elem = 'X'
                                 hit = true;
-                                clearInterval(IntId);
-                                console.log(`Hit! Number of tries -${amoyntOfHit}`);
+                               
                             } else {
                                 elem = '#'
                             }
@@ -68,19 +67,16 @@
 
             
 
-            const IntId = setInterval(()=>{
-                console.clear();
-                
-                shoot();
-            },1000)
+            while (!hit) {
                 
                 
+                setTimeout(()=>{
+                    console.clear();
+                    console.log(` Hit №${amoyntOfHit}`);
+                    shoot();
+                })
                 
-                    
-
-               
-                
-            
+            }
         }
 
         blindSniper(4, 4)

@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <style>
+        .hoverColor{
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <div class="tree"></div>
@@ -22,6 +26,7 @@
                 result = result + '*';
                 const div = document.createElement('div')
                 div.innerHTML = result;
+                
                 elem[0].appendChild(div);
                 
                 }
@@ -43,6 +48,19 @@
         }
 
         renderTree('.tree', 5);
+
+        function redblick(event){
+            event.target.classList.add('hoverColor');
+        }
+        function redblickRemove(event){
+            event.target.classList.remove('hoverColor');
+        }
+
+        const div= document.querySelectorAll('.tree').forEach(node =>{
+            node.addEventListener('mouseover', redblick)
+            node.addEventListener('mouseout', redblickRemove)
+        })
+       
     </script>
 </body>
 </html>
