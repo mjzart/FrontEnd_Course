@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function blindSniper(n, m) {
+            let hit = false;
+            let spiderX = Math.floor(Math.random()*n);  
+            let spiderY = Math.floor(Math.random()*m);
+            
+            let layer = '';
+            let elem = '#';
+            for (let i=0; i<n; i++){
+                for (let j=0; j<m; j++){
+                    if (i === spiderX && j === spiderY){
+                        elem = '$'
+                    } else {
+                        elem = '#'
+                    }
+                    layer = layer +elem;  
+                }
+                layer = layer +'\n';  
+            }
+            console.log(layer);
+            function shoot() {
+                amoyntOfHit = amoyntOfHit + 1;
+                
+                let shootX = Math.floor(Math.random()*n);  
+                let shootY = Math.floor(Math.random()*m); 
+                layer = '';
+                if (shootX === spiderX && shootY === spiderY){
+                    for (let i=0; i<n; i++){
+                        for (let j=0; j<m; j++){
+                            if (i === spiderX && j === spiderY){
+                                elem = 'X'
+                                hit = true;
+                                clearInterval(IntId);
+                                console.log(`Hit! Number of tries -${amoyntOfHit}`);
+                            } else {
+                                elem = '#'
+                            }
+                            layer = layer +elem;  
+                        }
+                        layer = layer +'\n';  
+                    }
+                } else {
+                    for (let i=0; i<n; i++){
+                        for (let j=0; j<m; j++){
+                            if (i === spiderX && j === spiderY){
+                                elem = '$'
+                            } else if (i === shootX && j === shootY){
+                                elem = '*'
+                            } else {
+                                elem = '#'
+                            }
+                            layer = layer +elem;  
+                        }
+                        layer = layer +'\n';  
+                    }
+                }
+                console.log(layer);
+            }
+            let amoyntOfHit = 0;
+
+            
+
+            const IntId = setInterval(()=>{
+                console.clear();
+                
+                shoot();
+            },1000)
+                
+                
+                
+                    
+
+               
+                
+            
+        }
+
+        blindSniper(10, 10)
+    </script>
+</body>
+</html>
