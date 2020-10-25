@@ -1,0 +1,27 @@
+{
+  "name": "education",
+  "version": "1.0.0",
+  "description": "Resouces\r  - [Основи GIT [rus]](https://git-scm.com/book/ru/v2/Введение-Основы-Git)\r  - [Visualizing GIT [eng]](http://git-school.github.io/visualizing-git/#free-remote)\r  - [Learn GIT branching [eng]](https://learngitbranching.js.org/)\r  - [Керівництво по розробці з Git [ukr]](https://github.com/denysdovhan/git-style-guide)\r  - [GIt cheat sheet [rus]](https://github.github.com/training-kit/downloads/ru/github-git-cheat-sheet/)\r  - [Запис вступного вебінара](https://etutorium.com/auth/login.html?token=c7697b35589811d6bfc4316b589811d6bf04097a)\r  - [Скрінкаст по GIT](https://www.youtube.com/playlist?list=PLDyvV36pndZHkDRik6kKF6gSb0N0W995h) (обов'язково перших три розділи, решта опціонально)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "timeout": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kolland/fe-basics-resources.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kolland/fe-basics-resources/issues"
+  },
+  "homepage": "https://github.com/Kolland/fe-basics-resources#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}
