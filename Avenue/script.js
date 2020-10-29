@@ -56,8 +56,10 @@ fetch('https://my-json-server.typicode.com/Kolland/fe-basics-resources/products'
 
         const $isotope = $('.item').isotope();
         $('.filter-item').on('click', function() {
-        console.log(this.dataset.filter);
-        $isotope.isotope({ filter: this.dataset.filter });
+            console.log(this.dataset.filter);
+            $('.filter-item').removeClass('filter-item-click') ;      
+            this.classList.add('filter-item-click')
+            $isotope.isotope({ filter: this.dataset.filter });
     })
     })
 

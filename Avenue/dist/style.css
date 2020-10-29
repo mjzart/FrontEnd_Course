@@ -42,8 +42,7 @@ table {
   border-spacing: 0; }
 
 .top-block {
-  background-color: #333333;
-  margin-bottom: 37px; }
+  background-color: #333333; }
 
 .container {
   color: #999999; }
@@ -96,9 +95,40 @@ table {
         padding: 16px;
         color: #fff; }
 
+.bgconteiner {
+  background-image: url("../bgcMain.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 40%;
+  position: relative;
+  margin-bottom: 60px; }
+
+.search {
+  margin-left: 50px; }
+
+.search-input {
+  width: 190px;
+  height: 30px;
+  border: solid 1px #e7e7e7;
+  background-color: #f8f8f8; }
+
+.slider-button {
+  position: absolute;
+  font-family: Montserrat;
+  font-size: 16px;
+  text-align: center;
+  color: #454647;
+  text-transform: uppercase;
+  padding: 23px 33px;
+  border: solid 2px #737373;
+  background-color: #fff;
+  bottom: 50px;
+  right: 50px; }
+
 .nav {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-top: 33px; }
   .nav .menu-list {
     display: flex; }
   .nav .menu-item {
@@ -168,7 +198,8 @@ table {
     .nav .menu-item:hover {
       color: #00c8c8; }
   .nav .right-nav-side {
-    display: flex; }
+    display: flex;
+    align-items: center; }
   .nav .logo {
     font-family: Montserrat;
     font-size: 24px;
@@ -210,7 +241,7 @@ table {
   color: #727272;
   margin-right: 40px; }
 
-.filter-item:hover {
+.filter-item-click {
   color: #00c8c8;
   font-weight: 700; }
 
