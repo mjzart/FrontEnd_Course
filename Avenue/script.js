@@ -54,13 +54,25 @@ fetch('https://my-json-server.typicode.com/Kolland/fe-basics-resources/products'
             })
         })
 
-        const $isotope = $('.item').isotope();
+        const lastFilter = localStorage.getItem('lastFilter');
+        if (!lastFilter){
+            lastFilter='*'
+        }
+
+        
+        const $isotope = $(".product-container").isotope()
+       
+        $isotope.isotope({ filter: lastFilter });
+        $('.filter-item').removeClass('filter-item-click') ;             
+        document.querySelector(`[data-filter = "${lastFilter}"]`).classList.add('filter-item-click');
+
         $('.filter-item').on('click', function() {
             console.log(this.dataset.filter);
             $('.filter-item').removeClass('filter-item-click') ;      
-            this.classList.add('filter-item-click')
+            this.classList.add('filter-item-click');
+            localStorage.setItem('lastFilter', this.dataset.filter)
             $isotope.isotope({ filter: this.dataset.filter });
-    })
+        })
     })
 
     
