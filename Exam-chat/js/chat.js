@@ -1,6 +1,20 @@
 console.log(localStorage.getItem('connectId'));
 document.querySelectorAll('.chat-id')[0].innerHTML = `Chat id: ${localStorage.getItem('connectId')}`
 
+
+const buttonExit = document.querySelector('.exit-chat')
+const buttonLogout = document.querySelector('.logout')
+buttonLogout.addEventListener('click', ()=>{
+    localStorage.removeItem('connectId');
+    localStorage.removeItem('access_token');
+    window.location.href = 'index.html';    
+})
+
+buttonExit.addEventListener('click', ()=>{
+    localStorage.removeItem('connectId');
+    window.location.href = 'main-menu.html';    
+})
+
 const massagesBox = document.querySelectorAll('.chat-history')[0];
 
 const socket = new WebSocket('wss://simple-chat-demo.herokuapp.com');
@@ -22,6 +36,7 @@ socket.addEventListener("open", ()=>{
     });
     console.log(data);
     
+    jQuery(massagesBox).scrollTop(999999);
 
 })
     socket.send(
@@ -59,6 +74,8 @@ document.getElementById("massege-block").addEventListener("submit", function(e){
             }
         })
     )
+
+    this.elements["message"].value = '';
 })
 
 function buildMassageHtml(nick, massage) {

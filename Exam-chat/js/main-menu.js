@@ -1,3 +1,9 @@
+const buttonLogout = document.querySelector('.logout')
+buttonLogout.addEventListener('click', ()=>{
+    localStorage.removeItem('connectId');
+    localStorage.removeItem('access_token');
+    window.location.href = 'index.html';    
+})
 document.getElementById('enter-chat').addEventListener('submit', function(e){
     e.preventDefault();
 
